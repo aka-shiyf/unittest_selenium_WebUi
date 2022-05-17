@@ -6,7 +6,7 @@ from selenium import webdriver
 class BaseUtil(unittest.TestCase):
     # 前置
     def setUp(self) -> None:
-        self.dr = webdriver.Firefox()
+        self.dr = webdriver.Firefox('/home/firefox')
         self.dr.get("https://user.flashchainsign.com/#/login")
 
     # 后置
